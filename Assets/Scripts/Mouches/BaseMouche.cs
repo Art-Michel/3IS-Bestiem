@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoucheReel : Ennemis
+public class BaseMouche : Ennemis
 {
     protected override void Death()
     {
-        //change to photorealistic visual
-        TilesManager.Instance.ChangeTileSet(realTiles);
+        //change to GB visual
+        TilesManager.Instance.ChangeTileSet(baseTiles);
         base.Death();
     }
 }

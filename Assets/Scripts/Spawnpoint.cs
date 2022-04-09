@@ -16,23 +16,44 @@ public class Spawnpoint : MonoBehaviour
 
     private GameObject spawnedObject;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
-        randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
-        if(randomTest < enemiesToSpawn.Count - 1)
+        if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[0])
         {
-            objToSpawn = enemiesToSpawn[randomTest];
+            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            if(randomTest < enemiesToSpawn.Count - 1)
+            {
+                objToSpawn = enemiesToSpawn[randomTest];
+            }
+            else 
+            {
+                objToSpawn = enemiesToSpawn[0];
+            }
         }
-        else 
+        else if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[1])
         {
-            objToSpawn = enemiesToSpawn[enemiesToSpawn.Count - 1];
+            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            if(randomTest < enemiesToSpawn.Count - 1)
+            {
+                objToSpawn = enemiesToSpawn[randomTest];
+            }
+            else 
+            {
+                objToSpawn = enemiesToSpawn[1];
+            }
+        }
+        else if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[2])
+        {
+            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            if(randomTest < enemiesToSpawn.Count - 1)
+            {
+                objToSpawn = enemiesToSpawn[randomTest];
+            }
+            else 
+            {
+                objToSpawn = enemiesToSpawn[2];
+            }
         }
 
         if(!isSpawning)

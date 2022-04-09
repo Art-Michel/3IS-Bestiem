@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 7889042439356253621}
   - component: {fileID: 7889042439356253620}
   - component: {fileID: 7889042439356253627}
-  - component: {fileID: 7889042439356253626}
+  - component: {fileID: 3142187068603064118}
   m_Layer: 0
   m_Name: MoucheBase
   m_TagString: Untagged
@@ -169,7 +169,7 @@ MonoBehaviour:
   detailedGizmos: 0
   startEndModifier:
     addPoints: 0
-    exactStartPoint: 3
+    exactStartPoint: 0
     exactEndPoint: 3
     useRaycasting: 0
     mask:
@@ -248,7 +248,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7889042439356253626
+--- !u!114 &3142187068603064118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,6 +257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7889042439356253625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ef07a02f26b9342b25ec6837fe76d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 0289f5eee686d4e46a209181cb8d9d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseTiles: {fileID: 0}

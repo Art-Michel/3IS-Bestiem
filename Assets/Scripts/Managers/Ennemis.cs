@@ -4,11 +4,19 @@ using UnityEngine;
 using Pathfinding;
 using NaughtyAttributes;
 
-public class Ennemis : MonoBehaviour
+public class Ennemis : LocalManager<Ennemis>
 {
-    private void Awake() 
+    public GameObject baseTiles;
+    public GameObject gbTiles;
+    public GameObject realTiles;
+
+
+    new private void Awake() 
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        baseTiles = TilesManager.Instance.tileSets[0];
+        gbTiles = TilesManager.Instance.tileSets[1];
+        realTiles = TilesManager.Instance.tileSets[2];
     }
 
     // Start is called before the first frame update
