@@ -180,7 +180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2954768987502372734
 Transform:
   m_ObjectHideFlags: 0
@@ -370,6 +370,7 @@ MonoBehaviour:
   _tongue: {fileID: 5141548463959379887}
   _tongueTip: {fileID: 4510844896677734033}
   _cursor: {fileID: 0}
+  _tongueShootingTime: 0.1
 --- !u!1 &8684915192659690113
 GameObject:
   m_ObjectHideFlags: 0

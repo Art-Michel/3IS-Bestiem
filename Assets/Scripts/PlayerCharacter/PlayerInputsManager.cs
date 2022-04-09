@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputsManager : MonoBehaviour
+public class PlayerInputsManager : LocalManager<PlayerInputsManager>
 {
     public PlayerInputs Inputs;
 

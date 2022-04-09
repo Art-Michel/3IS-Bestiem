@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerSlurp : MonoBehaviour
 {
-    PlayerInputs _playerInputs;
+    private const int _tongueMaxRange = 16;
     [SerializeField] GameObject _tongue;
     [SerializeField] Transform _tongueTip;
     [SerializeField] Transform _cursor;
@@ -16,6 +16,7 @@ public class PlayerSlurp : MonoBehaviour
     bool _isRetractingTongue;
     float _tongueT;
     [SerializeField] float _tongueShootingTime;
+    PlayerInputs _playerInputs;
 
     void Start()
     {
@@ -61,8 +62,8 @@ public class PlayerSlurp : MonoBehaviour
     void ShootTongue()
     {
         _tongueT += Time.deltaTime / _tongueShootingTime;
-        _tongue.transform.localScale = new Vector3(1, Mathf.Lerp(0, _faceTargetDistance.magnitude * 2 - 1, _tongueT), 1);
-        _tongueTip.transform.localScale = new Vector3(1, 1 / _tongue.transform.localScale.y, 1);
+        _tongue.transform.localScale = new Vector3(1, Mathf.Lerp(0, Mathf.Clamp(_faceTargetDistance.magnitude * 2, 0, _tongueMaxRange) , _tongueT), 1);
+        _tongueTip.transform.localScale = new Vector3(1, Mathf.Clamp(1 / _tongue.transform.localScale.y,0.01f,1), 1);
         if (_tongueT >= 1)
         {
             _isShootingTongue = false;
@@ -73,8 +74,8 @@ public class PlayerSlurp : MonoBehaviour
     void RetractTongue()
     {
         _tongueT -= Time.deltaTime / _tongueShootingTime;
-        _tongue.transform.localScale = new Vector3(1, Mathf.Lerp(0, _faceTargetDistance.magnitude * 2 - 1, _tongueT), 1);
-        _tongueTip.transform.localScale = new Vector3(1, 1 / _tongue.transform.localScale.y, 1);
+        _tongue.transform.localScale = new Vector3(1, Mathf.Lerp(0, Mathf.Clamp(_faceTargetDistance.magnitude * 2, 0, _tongueMaxRange), _tongueT), 1);
+        _tongueTip.transform.localScale = new Vector3(1, Mathf.Clamp(1 / _tongue.transform.localScale.y,0.01f,1), 1);
         if (_tongueT <= 0)
         {
             Unslurp();

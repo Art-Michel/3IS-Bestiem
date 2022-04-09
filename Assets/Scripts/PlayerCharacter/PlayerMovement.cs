@@ -7,8 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     PlayerInputs _playerInputs;
+    PlayerSpriteManager _playerSpriteManager;
     SpriteRenderer _bodySpriteRenderer;
-    [SerializeField] List<Sprite> _sprites;
 
     bool _isPressingADirection = false;
     float _movementLerpT = 0;
@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         _bodySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        _playerSpriteManager = GetComponent<PlayerSpriteManager>();
     }
 
     void Start()
@@ -41,10 +42,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void AnimateFrog()
     {
-        if (_movementLerpT < 0.1f) _bodySpriteRenderer.sprite = _sprites[0];
-        else if (_movementLerpT < 0.4f) _bodySpriteRenderer.sprite = _sprites[1];
-        else if (_movementLerpT < 0.7f) _bodySpriteRenderer.sprite = _sprites[2];
-        else if (_movementLerpT < 1f) _bodySpriteRenderer.sprite = _sprites[3];
+        if (_movementLerpT < 0.1f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[0];
+        else if (_movementLerpT < 0.4f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[1];
+        else if (_movementLerpT < 0.7f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[2];
+        else if (_movementLerpT < 1f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[3];
         
         if(_wantedPosition.x <0) _bodySpriteRenderer.flipX = true;
         else if(_wantedPosition.x >0) _bodySpriteRenderer.flipX = false;
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _isPressingADirection = false;
         _movementLerpT = 0;
-        _bodySpriteRenderer.sprite = _sprites[3];
+        _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[3];
     }
 
     private void MoveFrog()
