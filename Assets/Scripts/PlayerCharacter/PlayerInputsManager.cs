@@ -8,13 +8,16 @@ public class PlayerInputsManager : MonoBehaviour
 {
     public PlayerInputs Inputs;
 
+    PlayerSlurp _playerSlurp;
     PlayerMovement _playerMovement;
     void Awake()
     {
         Inputs = new PlayerInputs();
         Inputs.Movement.Move.started += StartMovement;
         Inputs.Movement.Move.canceled += StopMovement;
+        Inputs.Action.Slurp.started += StartSlurping;
 
+        _playerSlurp = GetComponent<PlayerSlurp>();
         _playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -26,6 +29,11 @@ public class PlayerInputsManager : MonoBehaviour
     private void StopMovement(InputAction.CallbackContext obj)
     {
         _playerMovement.StopMoving();
+    }
+
+    private void StartSlurping(InputAction.CallbackContext obj)
+    {
+        _playerSlurp.Slurp();
     }
 
     #region disable enable inputs

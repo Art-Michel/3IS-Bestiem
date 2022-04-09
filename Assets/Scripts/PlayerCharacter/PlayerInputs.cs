@@ -106,6 +106,52 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Action"",
+            ""id"": ""2f3d78c1-e4f5-4a4d-b421-987ec6cde4a9"",
+            ""actions"": [
+                {
+                    ""name"": ""Slurp"",
+                    ""type"": ""Button"",
+                    ""id"": ""ea0cbc46-e1b3-45b5-bb44-4beebddf9f48"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Aim"",
+                    ""type"": ""Value"",
+                    ""id"": ""0a9fafbc-178f-48e9-8dc9-ddf59e8e4e5e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""a63325ee-250f-41bf-a6a0-3cadb2b51e17"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Slurp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""599322f1-9e18-4eb0-93a4-246a37de3448"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -113,6 +159,10 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
         m_Movement_Move = m_Movement.FindAction("Move", throwIfNotFound: true);
+        // Action
+        m_Action = asset.FindActionMap("Action", throwIfNotFound: true);
+        m_Action_Slurp = m_Action.FindAction("Slurp", throwIfNotFound: true);
+        m_Action_Aim = m_Action.FindAction("Aim", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -191,8 +241,54 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
         }
     }
     public MovementActions @Movement => new MovementActions(this);
+
+    // Action
+    private readonly InputActionMap m_Action;
+    private IActionActions m_ActionActionsCallbackInterface;
+    private readonly InputAction m_Action_Slurp;
+    private readonly InputAction m_Action_Aim;
+    public struct ActionActions
+    {
+        private @PlayerInputs m_Wrapper;
+        public ActionActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Slurp => m_Wrapper.m_Action_Slurp;
+        public InputAction @Aim => m_Wrapper.m_Action_Aim;
+        public InputActionMap Get() { return m_Wrapper.m_Action; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ActionActions set) { return set.Get(); }
+        public void SetCallbacks(IActionActions instance)
+        {
+            if (m_Wrapper.m_ActionActionsCallbackInterface != null)
+            {
+                @Slurp.started -= m_Wrapper.m_ActionActionsCallbackInterface.OnSlurp;
+                @Slurp.performed -= m_Wrapper.m_ActionActionsCallbackInterface.OnSlurp;
+                @Slurp.canceled -= m_Wrapper.m_ActionActionsCallbackInterface.OnSlurp;
+                @Aim.started -= m_Wrapper.m_ActionActionsCallbackInterface.OnAim;
+                @Aim.performed -= m_Wrapper.m_ActionActionsCallbackInterface.OnAim;
+                @Aim.canceled -= m_Wrapper.m_ActionActionsCallbackInterface.OnAim;
+            }
+            m_Wrapper.m_ActionActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Slurp.started += instance.OnSlurp;
+                @Slurp.performed += instance.OnSlurp;
+                @Slurp.canceled += instance.OnSlurp;
+                @Aim.started += instance.OnAim;
+                @Aim.performed += instance.OnAim;
+                @Aim.canceled += instance.OnAim;
+            }
+        }
+    }
+    public ActionActions @Action => new ActionActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
+    }
+    public interface IActionActions
+    {
+        void OnSlurp(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
     }
 }

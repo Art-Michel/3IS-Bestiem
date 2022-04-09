@@ -93,6 +93,52 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Action",
+            "id": "2f3d78c1-e4f5-4a4d-b421-987ec6cde4a9",
+            "actions": [
+                {
+                    "name": "Slurp",
+                    "type": "Button",
+                    "id": "ea0cbc46-e1b3-45b5-bb44-4beebddf9f48",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "0a9fafbc-178f-48e9-8dc9-ddf59e8e4e5e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a63325ee-250f-41bf-a6a0-3cadb2b51e17",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slurp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "599322f1-9e18-4eb0-93a4-246a37de3448",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

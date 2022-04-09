@@ -48,3 +48,6 @@ TagManager:
   - name: Entities
     uniqueID: 2232570287
     locked: 0
+  - name: FX
+    uniqueID: 968395275
+    locked: 0
