@@ -644,33 +644,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1143094068 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6538904636973525618, guid: 7312abd05d374f945ab623406796669e, type: 3}
-  m_PrefabInstance: {fileID: 6538904635639653269}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1143094073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143094068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7af8e1fe028198d4e933438d76cbff5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RegularSprites:
-  - {fileID: 8178346112441138694, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  - {fileID: -3861519073921678738, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  - {fileID: -1209021965006993049, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  - {fileID: -7208351576774345420, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  KeroSprites:
-  - {fileID: 2253142006867875602, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
-  - {fileID: -8723588712413798994, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
-  - {fileID: -5323098377977645717, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
-  - {fileID: 1689512354366455494, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
 --- !u!1 &1450140266
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,10 +742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
-      propertyPath: _playerMaxSpeed
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6538904636973525618, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_Name
       value: Froggy

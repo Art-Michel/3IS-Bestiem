@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 1568295727482251137}
   - component: {fileID: 5286934435096556509}
   - component: {fileID: 8634700375784033973}
+  - component: {fileID: 1143094073}
   m_Layer: 0
   m_Name: Froggy
   m_TagString: Untagged
@@ -306,11 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8761bed26702374f895882d42a754a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sprites:
-  - {fileID: 8178346112441138694, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  - {fileID: -3861519073921678738, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  - {fileID: -1209021965006993049, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
-  - {fileID: -7208351576774345420, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
   _movementCurve:
     serializedVersion: 2
     m_Curve:
@@ -353,7 +349,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _playerMaxSpeed: 7.17
+  _playerMaxSpeed: 11
   _lerpSpeed: 0.5
 --- !u!114 &8634700375784033973
 MonoBehaviour:
@@ -371,6 +367,28 @@ MonoBehaviour:
   _tongueTip: {fileID: 4510844896677734033}
   _cursor: {fileID: 0}
   _tongueShootingTime: 0.1
+--- !u!114 &1143094073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538904636973525618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af8e1fe028198d4e933438d76cbff5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RegularSprites:
+  - {fileID: 8178346112441138694, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
+  - {fileID: -3861519073921678738, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
+  - {fileID: -1209021965006993049, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
+  - {fileID: -7208351576774345420, guid: 0ab3442d222632e44b9915cba390c8f3, type: 3}
+  KeroSprites:
+  - {fileID: 2253142006867875602, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
+  - {fileID: -8723588712413798994, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
+  - {fileID: -5323098377977645717, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
+  - {fileID: 1689512354366455494, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
 --- !u!1 &8684915192659690113
 GameObject:
   m_ObjectHideFlags: 0
