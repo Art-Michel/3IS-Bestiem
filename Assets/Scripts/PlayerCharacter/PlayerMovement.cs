@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_movementLerpT < 0.1f) _bodySpriteRenderer.sprite = _sprites[0];
         else if (_movementLerpT < 0.4f) _bodySpriteRenderer.sprite = _sprites[1];
-        else if (_movementLerpT < 0.8f) _bodySpriteRenderer.sprite = _sprites[2];
+        else if (_movementLerpT < 0.7f) _bodySpriteRenderer.sprite = _sprites[2];
         else if (_movementLerpT < 1f) _bodySpriteRenderer.sprite = _sprites[3];
         
         if(_wantedPosition.x <0) _bodySpriteRenderer.flipX = true;

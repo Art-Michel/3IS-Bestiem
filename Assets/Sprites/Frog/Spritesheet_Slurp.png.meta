@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 0ab3442d222632e44b9915cba390c8f3
+guid: 5ce0ec1d24a359b4d92b07f7ed774319
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8178346112441138694
-    second: Anim_FrogJump_0
+      213: 534398755908378288
+    second: Spritesheet_Slurp_0
   - first:
-      213: -3861519073921678738
-    second: Anim_FrogJump_1
-  - first:
-      213: -1209021965006993049
-    second: Anim_FrogJump_2
-  - first:
-      213: -7208351576774345420
-    second: Anim_FrogJump_3
-  - first:
-      213: 2089807996588954989
-    second: Anim_FrogJump_4
+      213: -1065027002955119556
+    second: Spritesheet_Slurp_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +54,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -106,106 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_FrogJump_0
+      name: Spritesheet_Slurp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be545e46d09a6700800000000000000
+      internalID: 534398755908378288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Slurp_1
       rect:
         serializedVersion: 2
         x: 8
-        y: 8
-        width: 16
-        height: 16
+        y: 0
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60e304265725f7170800000000000000
-      internalID: 8178346112441138694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_FrogJump_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e62c0898cd0296ac0800000000000000
-      internalID: -3861519073921678738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_FrogJump_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7690d12bde0b83fe0800000000000000
-      internalID: -1209021965006993049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_FrogJump_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43dfc32be6ac6fb90800000000000000
-      internalID: -7208351576774345420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_FrogJump_4
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 8
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d659475fc4d700d10800000000000000
-      internalID: 2089807996588954989
+      spriteID: c3449a465934831f0800000000000000
+      internalID: -1065027002955119556
       vertices: []
       indices: 
       edges: []

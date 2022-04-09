@@ -178,7 +178,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 11
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -487,7 +487,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+  m_Color: {r: 0.25208595, g: 0.42352942, b: 0.23137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -568,6 +568,26 @@ PrefabInstance:
     - target: {fileID: 1207295523338199267, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: _lerpSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: _playerMaxSpeed
+      value: 7.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: _movementCurve.m_Curve.Array.data[2].time
+      value: 0.6709209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: _movementCurve.m_Curve.Array.data[2].value
+      value: 0.99868774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: _movementCurve.m_Curve.Array.data[3].inSlope
+      value: -3.0347955
       objectReference: {fileID: 0}
     - target: {fileID: 6023705940499369364, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_LocalPosition.x
