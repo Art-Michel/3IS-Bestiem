@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class Ennemis : MonoBehaviour, IPooledObject
 {
@@ -11,6 +12,7 @@ public class Ennemis : MonoBehaviour, IPooledObject
     private void Awake() 
     {
         objectTag = gameObject.tag;
+        GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Start is called before the first frame update
@@ -32,12 +34,12 @@ public class Ennemis : MonoBehaviour, IPooledObject
             if(objectTag == "Test")
             {
                 //pouvoir ennemi 1 
-                transform.position += Vector3.right * Time.deltaTime;
+                //transform.position += Vector3.right * Time.deltaTime;
             }
             else if(objectTag == "Test2")
             {
                 //pouvoir ennemi 2
-                transform.position += Vector3.left * Time.deltaTime;
+                //transform.position += Vector3.left * Time.deltaTime;
             }
         }
     }
