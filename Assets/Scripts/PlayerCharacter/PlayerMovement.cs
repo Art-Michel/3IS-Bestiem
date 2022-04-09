@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerInputs _playerInputs;
     PlayerSpriteManager _playerSpriteManager;
     SpriteRenderer _bodySpriteRenderer;
+    [SerializeField] Transform _collisionCenter;
 
     bool _isPressingADirection = false;
     float _movementLerpT = 0;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _bodySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _playerSpriteManager = GetComponent<PlayerSpriteManager>();
+
     }
 
     void Start()
@@ -46,11 +48,11 @@ public class PlayerMovement : MonoBehaviour
         else if (_movementLerpT < 0.4f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[1];
         else if (_movementLerpT < 0.7f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[2];
         else if (_movementLerpT < 1f) _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[3];
-        
-        if(_wantedPosition.x <0) _bodySpriteRenderer.flipX = true;
-        else if(_wantedPosition.x >0) _bodySpriteRenderer.flipX = false;
 
-        _bodySpriteRenderer.transform.position = new Vector2(transform.position.x,transform.position.y+ _currentSpeed * 0.07f);
+        if (_wantedPosition.x < 0) _bodySpriteRenderer.flipX = true;
+        else if (_wantedPosition.x > 0) _bodySpriteRenderer.flipX = false;
+
+        _bodySpriteRenderer.transform.position = new Vector2(transform.position.x, transform.position.y + _currentSpeed * 0.07f);
     }
 
     internal void StartMoving()
@@ -67,6 +69,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveFrog()
     {
+        CheckForCollisions();
         transform.position += (Vector3)_wantedPosition * _currentSpeed * Time.deltaTime;
+    }
+
+    void CheckForCollisions()
+    {
+        RaycastHit2D hit2D = Physics2D.Raycast(_collisionCenter.position, _wantedPosition.normalized, 0.2f);
+        if (hit2D)
+        {
+            _wantedPosition -= hit2D.normal * Vector2.Dot(_wantedPosition, hit2D.normal);
+            CheckForCollisions();
+        }
     }
 }

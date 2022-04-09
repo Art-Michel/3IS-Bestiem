@@ -10,8 +10,9 @@ public class PlayerInputsManager : LocalManager<PlayerInputsManager>
 
     PlayerSlurp _playerSlurp;
     PlayerMovement _playerMovement;
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         Inputs = new PlayerInputs();
         Inputs.Movement.Move.started += StartMovement;
         Inputs.Movement.Move.canceled += StopMovement;
