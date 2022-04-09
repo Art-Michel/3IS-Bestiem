@@ -158,6 +158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12b89c0f84dbaf4f91fac5fec57a7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseTiles: {fileID: 0}
+  gbTiles: {fileID: 0}
+  realTiles: {fileID: 0}
 --- !u!1 &1209215449509429980
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209215449509429982}
   - component: {fileID: 1209215449509429981}
+  - component: {fileID: 5781087442725703347}
   m_Layer: 0
   m_Name: EnnemyGFX
   m_TagString: Untagged
@@ -229,8 +233,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  m_Sprite: {fileID: 1262659377886097001, guid: 31ffc301a99706846ae9c29623133996, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -240,3 +244,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5781087442725703347
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209215449509429980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2874ec9a685a9644cb37e4001fe45448, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
