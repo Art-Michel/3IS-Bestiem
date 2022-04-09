@@ -676,9 +676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawningCD: 2
   enemiesToSpawn:
-  - {fileID: 1209215449055190521, guid: 7f6929c3a7968f34d9646bfc17a78b01, type: 3}
-  - {fileID: 1209215449055190521, guid: 1b49adc2437faae43a6460556c885945, type: 3}
-  - {fileID: 7889042439356253625, guid: 7cdcbaa7db84b2c419baba39eb17facc, type: 3}
+  - {fileID: 1209215449055190521, guid: e061c39c30c50b943b7a75b2d9c99e83, type: 3}
+  - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
+  - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
 --- !u!4 &1418372727
 Transform:
   m_ObjectHideFlags: 0
