@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     PlayerInputs _playerInputs;
+    SpriteRenderer _bodySpriteRenderer;
+    [SerializeField] List<Sprite> _sprites;
 
     bool _isPressingADirection = false;
     float _movementLerpT = 0;
@@ -14,6 +16,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float _playerMaxSpeed;
     float _currentSpeed;
     Vector2 _wantedPosition = Vector2.zero;
+    [SerializeField] float _lerpSpeed;
+
+    void Awake()
+    {
+        _bodySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
 
     void Start()
     {
@@ -23,11 +31,25 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _wantedPosition = _playerInputs.Movement.Move.ReadValue<Vector2>(); // Read Movement input
-        if (_isPressingADirection) _movementLerpT += Time.deltaTime;
+        if (_isPressingADirection) _movementLerpT += Time.deltaTime / _lerpSpeed;
         _currentSpeed = Mathf.Lerp(0, _playerMaxSpeed, _movementCurve.Evaluate(_movementLerpT));
         MoveFrog();
+        AnimateFrog();
 
         if (_movementLerpT >= 1) _movementLerpT = 0;
+    }
+
+    private void AnimateFrog()
+    {
+        if (_movementLerpT < 0.1f) _bodySpriteRenderer.sprite = _sprites[0];
+        else if (_movementLerpT < 0.4f) _bodySpriteRenderer.sprite = _sprites[1];
+        else if (_movementLerpT < 0.8f) _bodySpriteRenderer.sprite = _sprites[2];
+        else if (_movementLerpT < 1f) _bodySpriteRenderer.sprite = _sprites[3];
+        
+        if(_wantedPosition.x <0) _bodySpriteRenderer.flipX = true;
+        else if(_wantedPosition.x >0) _bodySpriteRenderer.flipX = false;
+
+        _bodySpriteRenderer.transform.position = new Vector2(transform.position.x,transform.position.y+ _currentSpeed * 0.07f);
     }
 
     internal void StartMoving()
@@ -39,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _isPressingADirection = false;
         _movementLerpT = 0;
+        _bodySpriteRenderer.sprite = _sprites[3];
     }
 
     private void MoveFrog()
