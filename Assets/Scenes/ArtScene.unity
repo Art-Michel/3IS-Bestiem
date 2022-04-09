@@ -296,7 +296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &693155629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,8 +432,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1057438273
-  m_SortingLayer: 1
+  m_SortingLayerID: 1531656147
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
@@ -511,6 +511,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1207295523338199267, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207295523338199267, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2062397009
+      objectReference: {fileID: 0}
     - target: {fileID: 5286934435096556509, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: _averageSpeed
       value: 3
