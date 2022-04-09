@@ -7,7 +7,7 @@ public class MoucheKero : Ennemis
     protected override void Death()
     {
         //Transforme Frog en Kero
-        
+        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.KeroSprites);
         base.Death();
     }
 }

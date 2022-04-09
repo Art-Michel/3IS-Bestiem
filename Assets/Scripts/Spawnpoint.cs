@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 public class Spawnpoint : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class Spawnpoint : MonoBehaviour
             Invoke("StopSpawning", spawningCD);
         }
     }
-
+    
     private void StopSpawning()
     {
         isSpawning = false;

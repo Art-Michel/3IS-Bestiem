@@ -724,6 +724,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1639937734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2954768987502372734, guid: 7312abd05d374f945ab623406796669e, type: 3}
+  m_PrefabInstance: {fileID: 1949043327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732775562
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froggy
       objectReference: {fileID: 0}
+    - target: {fileID: 6538904636973525618, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6538904636973525628, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -862,6 +871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8634700375784033973, guid: 7312abd05d374f945ab623406796669e, type: 3}
+      propertyPath: _cursor
+      value: 
+      objectReference: {fileID: 1639937734}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7312abd05d374f945ab623406796669e, type: 3}
 --- !u!1 &2142981978
