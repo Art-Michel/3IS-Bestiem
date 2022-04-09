@@ -24,7 +24,7 @@ public class Spawnpoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        randomTest = Random.Range(0, 100);
+        randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
         if(randomTest < enemiesToSpawn.Count - 1)
         {
             objToSpawn = enemiesToSpawn[randomTest];

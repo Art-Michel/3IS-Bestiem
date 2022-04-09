@@ -676,19 +676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawningCD: 2
   enemiesToSpawn:
-  - {fileID: 1209215449055190521, guid: 96ad348a4a3fab44f8a35a82d45d5800, type: 3}
-  - {fileID: 1209215449055190521, guid: 8e349e88540f22d4b97e8041f3cc2be8, type: 3}
-  - {fileID: 1209215449055190521, guid: 8002c7a91ee639445b1150b93699d704, type: 3}
   - {fileID: 1209215449055190521, guid: 7f6929c3a7968f34d9646bfc17a78b01, type: 3}
-  - {fileID: 1209215449055190521, guid: 15cb4489e99885f429cded7945d34ae5, type: 3}
-  - {fileID: 1209215449055190521, guid: 18637a7b00cd0424dbddd875387895ad, type: 3}
-  - {fileID: 1209215449055190521, guid: 35566e6601734504f953d0fa3fdc7e7d, type: 3}
-  - {fileID: 1209215449055190521, guid: 08dd18ea04083b94b8aba98559c0a5d9, type: 3}
   - {fileID: 1209215449055190521, guid: 1b49adc2437faae43a6460556c885945, type: 3}
-  - {fileID: 1209215449055190521, guid: 291430d72686e684bb1d12a052465be3, type: 3}
-  - {fileID: 1209215449055190521, guid: 8bcf9169275e9b240b571cc1d2843eda, type: 3}
-  - {fileID: 1209215449055190521, guid: 0844e72176b85ce4fba771f2fb59147b, type: 3}
-  - {fileID: 1209215449055190521, guid: 73caaa6017dd56b41b1ee28fc4eddb2e, type: 3}
   - {fileID: 7889042439356253625, guid: 7cdcbaa7db84b2c419baba39eb17facc, type: 3}
 --- !u!4 &1418372727
 Transform:
