@@ -818,10 +818,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Froggy
       objectReference: {fileID: 0}
-    - target: {fileID: 6538904636973525618, guid: 7312abd05d374f945ab623406796669e, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 6538904636973525628, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -866,10 +862,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8634700375784033973, guid: 7312abd05d374f945ab623406796669e, type: 3}
-      propertyPath: _cursor
-      value: 
-      objectReference: {fileID: 128985406}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7312abd05d374f945ab623406796669e, type: 3}
 --- !u!1 &2142981978
