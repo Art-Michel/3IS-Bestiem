@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: dd60c19dd6f1b474681743b282ab475c
+=======
 guid: 33c6b2b11c87da341b6c02b23e1da307
+>>>>>>> adb6a80 (Ajout de tous les types potentiels d'ennemis)
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

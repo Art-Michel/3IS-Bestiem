@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Spawnpoint : MonoBehaviour
 {
-
     private int randomTest;
     private string tempTag;
     private bool isSpawning;
@@ -13,6 +12,8 @@ public class Spawnpoint : MonoBehaviour
     public List<GameObject> enemiesToSpawn;
 
     private GameObject objToSpawn;
+
+    private GameObject spawnedObject;
 
     // Start is called before the first frame update
     void Start()
@@ -23,22 +24,22 @@ public class Spawnpoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        randomTest = Random.Range(0, enemiesToSpawn.Count);
-        objToSpawn = enemiesToSpawn[randomTest];
+        randomTest = Random.Range(0, 100);
+        if(randomTest < enemiesToSpawn.Count - 1)
+        {
+            objToSpawn = enemiesToSpawn[randomTest];
+        }
+        else 
+        {
+            objToSpawn = enemiesToSpawn[enemiesToSpawn.Count - 1];
+        }
 
         if(!isSpawning)
         {
             isSpawning = true;
-            StartCoroutine(SpawnEnemies());
+            spawnedObject = Instantiate(objToSpawn, transform.position, Quaternion.identity);
             Invoke("StopSpawning", spawningCD);
         }
-    }
-
-    public IEnumerator SpawnEnemies()
-    {
-        yield return new WaitForSeconds(spawningCD);
-        Instantiate(objToSpawn, transform.position, Quaternion.identity);
-        StopCoroutine(SpawnEnemies());
     }
 
     private void StopSpawning()

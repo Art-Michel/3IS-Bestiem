@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: c450932d24f08884cb8a3086ce5f8dc7
+=======
 guid: 1587988e735b318489743d488ce50c9b
+>>>>>>> adb6a80 (Ajout de tous les types potentiels d'ennemis)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
