@@ -12,6 +12,7 @@ public class MoucheAbeille : Ennemis
     public override void Death()
     {
         //Transforme Frog en abeille
+        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.AbeilleSprites);
         base.Death();
     }
 }

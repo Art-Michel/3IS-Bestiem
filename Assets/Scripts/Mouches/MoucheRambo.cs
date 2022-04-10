@@ -14,6 +14,7 @@ public class MoucheRambo : Ennemis
     public override void Death()
     {
         //Transforme Frog en Rambo
+        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.RamboSprites);
         Instantiate(deathVFX, transform.position, Quaternion.identity);
         base.Death();
     }
