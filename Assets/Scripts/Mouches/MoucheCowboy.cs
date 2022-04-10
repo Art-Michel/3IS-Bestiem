@@ -9,7 +9,7 @@ public class MoucheCowboy : Ennemis
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected override void Death()
+    public override void Death()
     {
         //passage en mode visée a la souris façon fps
         

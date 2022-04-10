@@ -9,7 +9,7 @@ public class MoucheKero : Ennemis
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected override void Death()
+    public override void Death()
     {
         //Transforme Frog en Kero
         PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.KeroSprites);

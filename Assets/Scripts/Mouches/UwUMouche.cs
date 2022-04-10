@@ -11,7 +11,7 @@ public class UwUMouche : Ennemis
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         uwuTiles = TilesManager.Instance.tileSets[3];
     }
-    protected override void Death()
+    public override void Death()
     {
         //Passe le monde en mode UwU
         TilesManager.Instance.ChangeTileSet(uwuTiles);

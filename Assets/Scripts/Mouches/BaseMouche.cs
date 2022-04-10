@@ -11,7 +11,7 @@ public class BaseMouche : Ennemis
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         baseTiles = TilesManager.Instance.tileSets[0];
     }
-    protected override void Death()
+    public override void Death()
     {
         //change to GB visual
         TilesManager.Instance.ChangeTileSet(baseTiles);

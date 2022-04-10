@@ -9,7 +9,7 @@ public class MoucheTetris : Ennemis
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected override void Death()
+    public override void Death()
     {
         //Transforme Frog en pièce de tetris
         base.Death();

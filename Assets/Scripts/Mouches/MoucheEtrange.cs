@@ -9,7 +9,7 @@ public class MoucheEtrange : Ennemis
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected override void Death()
+    public override void Death()
     {
         //Inverse les contrôles
         base.Death();

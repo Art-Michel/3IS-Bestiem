@@ -10,7 +10,7 @@ public class MoucheReel : Ennemis
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         realTiles = TilesManager.Instance.tileSets[2];
     }
-    protected override void Death()
+    public override void Death()
     {
         //change to photorealistic visual
         TilesManager.Instance.ChangeTileSet(realTiles);

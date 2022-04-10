@@ -9,7 +9,7 @@ public class MoucheTron : Ennemis
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected override void Death()
+    public override void Death()
     {
         //Laisse une trainée derrière Frog qui tue les mouches
         base.Death();

@@ -9,7 +9,7 @@ public class MoucheHelico : Ennemis
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    protected override void Death()
+    public override void Death()
     {
         //Fait tourner Frog autour de la mouche
         base.Death();

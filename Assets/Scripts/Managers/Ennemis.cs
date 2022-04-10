@@ -7,7 +7,7 @@ using NaughtyAttributes;
 public class Ennemis : MonoBehaviour
 {
     [Button]
-    protected virtual void Death()
+    public virtual void Death()
     {
         //pts++
         UIManager.Instance.score += 100;

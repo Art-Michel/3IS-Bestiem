@@ -11,7 +11,7 @@ public class MoucheGB : Ennemis
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         gbTiles = TilesManager.Instance.tileSets[1];
     }
-    protected override void Death()
+    public override void Death()
     {
         //change to GB visual
         TilesManager.Instance.ChangeTileSet(gbTiles);
