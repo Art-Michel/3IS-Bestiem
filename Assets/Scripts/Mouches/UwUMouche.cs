@@ -5,9 +5,11 @@ using Pathfinding;
 
 public class UwUMouche : Ennemis
 {
-    private void Awake()
+    public GameObject uwuTiles;
+    new private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        uwuTiles = TilesManager.Instance.tileSets[3];
     }
     protected override void Death()
     {

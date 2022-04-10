@@ -5,9 +5,11 @@ using Pathfinding;
 
 public class MoucheGB : Ennemis
 {    
-    private void Awake()
+    public GameObject gbTiles;
+    new private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        gbTiles = TilesManager.Instance.tileSets[1];
     }
     protected override void Death()
     {

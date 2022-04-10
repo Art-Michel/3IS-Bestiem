@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MoucheVer : Ennemis
 {
-    private void Awake()
+    new private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }

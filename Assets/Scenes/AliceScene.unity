@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousTileSet: {fileID: 0}
-  currentTileSet: {fileID: 0}
+  currentTileSet: {fileID: 1381682877}
   tileSets:
   - {fileID: 1381682877}
   - {fileID: 1022147362}
@@ -373,10 +373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ef07a02f26b9342b25ec6837fe76d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTiles: {fileID: 0}
-  gbTiles: {fileID: 0}
-  realTiles: {fileID: 0}
-  uwuTiles: {fileID: 0}
 --- !u!4 &234749795
 Transform:
   m_ObjectHideFlags: 0
@@ -27561,6 +27557,7 @@ MonoBehaviour:
   - {fileID: 1209215449055190521, guid: 080a803b4683ec74f876f499a32f5b64, type: 3}
   - {fileID: 1209215449055190521, guid: 80b8aa7f8ac2c394cbd1ad52ea0ad9f4, type: 3}
   - {fileID: 1209215449055190521, guid: 800c7444b88e0d046ab4c9d3e1486875, type: 3}
+  - {fileID: 1209215449055190521, guid: ce9a076a995a5c540bfb58c16957444f, type: 3}
 --- !u!4 &1418372727
 Transform:
   m_ObjectHideFlags: 0
@@ -27569,7 +27566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418372725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 7.39, z: 0}
+  m_LocalPosition: {x: -4.47, y: 7.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

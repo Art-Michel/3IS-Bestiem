@@ -4,9 +4,11 @@ using UnityEngine;
 using Pathfinding;
 public class MoucheReel : Ennemis
 {
-    private void Awake()
+    public GameObject realTiles;
+    new private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        realTiles = TilesManager.Instance.tileSets[2];
     }
     protected override void Death()
     {

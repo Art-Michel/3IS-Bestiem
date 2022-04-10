@@ -14,8 +14,6 @@ public class Spawnpoint : MonoBehaviour
 
     private GameObject objToSpawn;
 
-    private GameObject spawnedObject;
-
     // Update is called once per frame
     void Update()
     {
@@ -71,7 +69,7 @@ public class Spawnpoint : MonoBehaviour
         if(!isSpawning)
         {
             isSpawning = true;
-            spawnedObject = Instantiate(objToSpawn, transform.position, Quaternion.identity);
+            Instantiate(objToSpawn, transform.position, Quaternion.identity);
             Invoke("StopSpawning", spawningCD);
         }
     }

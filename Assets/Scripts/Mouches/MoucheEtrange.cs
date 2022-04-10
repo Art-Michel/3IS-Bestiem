@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class MoucheEtrange : Ennemis
 {
-    private void Awake()
+    new private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
