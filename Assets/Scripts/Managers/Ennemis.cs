@@ -9,7 +9,6 @@ public class Ennemis : MonoBehaviour
     [Button]
     public virtual void Death()
     {
-        //pts++
         Debug.Log("*dies from mid*");
         UIManager.Instance.score += 100;
         UIManager.Instance.UpdateScore();
