@@ -10,6 +10,7 @@ public class Ennemis : MonoBehaviour
     public virtual void Death()
     {
         //pts++
+        Debug.Log("*dies from mid*");
         UIManager.Instance.score += 100;
         UIManager.Instance.UpdateScore();
         Destroy(gameObject);
