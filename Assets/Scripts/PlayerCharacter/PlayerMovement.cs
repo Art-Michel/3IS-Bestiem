@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform _collisionCenter;
 
     bool _isPressingADirection = false;
+    bool _isMoving = false;
     float _movementLerpT = 0;
     [SerializeField] AnimationCurve _movementCurve = null;
     [SerializeField] float _playerMaxSpeed;
@@ -34,12 +35,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _wantedPosition = _playerInputs.Movement.Move.ReadValue<Vector2>(); // Read Movement input
-        if (_isPressingADirection) _movementLerpT += Time.deltaTime / _lerpSpeed;
+        if (_isMoving) _movementLerpT += Time.deltaTime / _lerpSpeed;
         _currentSpeed = Mathf.Lerp(0, _playerMaxSpeed, _movementCurve.Evaluate(_movementLerpT));
         MoveFrog();
         AnimateFrog();
 
-        if (_movementLerpT >= 1) _movementLerpT = 0;
+        if (_movementLerpT >= 1) 
+        {
+            EndAJump();
+        }
     }
 
     private void AnimateFrog()
@@ -52,19 +56,32 @@ public class PlayerMovement : MonoBehaviour
         if (_wantedPosition.x < 0) _bodySpriteRenderer.flipX = true;
         else if (_wantedPosition.x > 0) _bodySpriteRenderer.flipX = false;
 
-        _bodySpriteRenderer.transform.position = new Vector2(transform.position.x, transform.position.y + _currentSpeed * 0.07f);
+        _bodySpriteRenderer.transform.position = new Vector2(transform.position.x, transform.position.y + _currentSpeed * 0.06f);
     }
 
-    internal void StartMoving()
+    internal void StartPressingADirection()
     {
         _isPressingADirection = true;
+        if(!_isMoving) StartAJump();
     }
 
-    internal void StopMoving()
+    internal void StopPressingADirection()
     {
         _isPressingADirection = false;
+    }
+
+    void StartAJump()
+    {
         _movementLerpT = 0;
-        _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[3];
+        _isMoving = true;
+        SoundManager.Instance.JumpSound();
+    }
+
+    void EndAJump()
+    {
+        _isMoving = false;
+        if (_isPressingADirection)StartAJump();
+        _bodySpriteRenderer.sprite = _playerSpriteManager.CurrentSprites[0];
     }
 
     private void MoveFrog()

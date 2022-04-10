@@ -24,12 +24,12 @@ public class PlayerInputsManager : LocalManager<PlayerInputsManager>
 
     private void StartMovement(InputAction.CallbackContext obj)
     {
-        _playerMovement.StartMoving();
+        _playerMovement.StartPressingADirection();
     }
 
     private void StopMovement(InputAction.CallbackContext obj)
     {
-        _playerMovement.StopMoving();
+        _playerMovement.StopPressingADirection();
     }
 
     private void StartSlurping(InputAction.CallbackContext obj)
