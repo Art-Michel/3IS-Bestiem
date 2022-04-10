@@ -4,21 +4,8 @@ using UnityEngine;
 using Pathfinding;
 using NaughtyAttributes;
 
-public class Ennemis : LocalManager<Ennemis>
+public class Ennemis : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     [Button]
     protected virtual void Death()
     {

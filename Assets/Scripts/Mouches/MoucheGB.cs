@@ -6,7 +6,7 @@ using Pathfinding;
 public class MoucheGB : Ennemis
 {    
     public GameObject gbTiles;
-    new private void Awake()
+    private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         gbTiles = TilesManager.Instance.tileSets[1];

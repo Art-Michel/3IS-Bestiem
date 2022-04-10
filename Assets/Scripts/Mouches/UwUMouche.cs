@@ -6,7 +6,7 @@ using Pathfinding;
 public class UwUMouche : Ennemis
 {
     public GameObject uwuTiles;
-    new private void Awake()
+    private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         uwuTiles = TilesManager.Instance.tileSets[3];

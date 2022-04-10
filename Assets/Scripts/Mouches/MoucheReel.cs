@@ -5,7 +5,7 @@ using Pathfinding;
 public class MoucheReel : Ennemis
 {
     public GameObject realTiles;
-    new private void Awake()
+    private void Awake()
     {
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         realTiles = TilesManager.Instance.tileSets[2];
