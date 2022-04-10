@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1209215449055190518}
   m_Layer: 0
   m_Name: MoucheGB
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414ca3e0c708c61429b4182276929eb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseTiles: {fileID: 0}
+  gbTiles: {fileID: 0}
+  realTiles: {fileID: 0}
 --- !u!1 &1209215449509429980
 GameObject:
   m_ObjectHideFlags: 0
