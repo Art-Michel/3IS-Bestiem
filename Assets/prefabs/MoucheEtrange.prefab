@@ -103,7 +103,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 0
+  enableRotation: 1
   autoRepath:
     mode: 2
     interval: 0.5
@@ -158,9 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d0a39e715145a64da011d9caaec30ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTiles: {fileID: 0}
-  gbTiles: {fileID: 0}
-  realTiles: {fileID: 0}
 --- !u!1 &1209215449509429980
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +229,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1987092723064840408, guid: 82b51626cba4b9f4e93a305954f0ef17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
