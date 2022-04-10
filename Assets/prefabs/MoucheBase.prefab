@@ -261,5 +261,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTiles: {fileID: 0}
-  gbTiles: {fileID: 0}
-  realTiles: {fileID: 0}

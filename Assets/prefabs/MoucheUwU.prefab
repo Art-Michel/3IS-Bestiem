@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uwuTiles: {fileID: 0}
+  deathVFX: {fileID: 3576235037896680574, guid: 5a0ecef00665fda45b5fc4e5a9cf4275, type: 3}
 --- !u!1 &1209215449509429980
 GameObject:
   m_ObjectHideFlags: 0

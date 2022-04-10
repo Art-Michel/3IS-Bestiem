@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd37a8dd3f2a5ce40a5c3bdfb36082c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 1820155315253687027, guid: 0f5bf261735c4aa46bcca97d1410ec23, type: 3}
 --- !u!1 &1209215449509429980
 GameObject:
   m_ObjectHideFlags: 0
