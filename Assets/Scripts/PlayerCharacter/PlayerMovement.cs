@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckForCollisions()
     {
         RaycastHit2D hit2D = Physics2D.Raycast(_collisionCenter.position, _wantedPosition.normalized, 0.2f);
-        if (hit2D)
+        if (hit2D && hit2D.transform.CompareTag("Wall"))
         {
             _wantedPosition -= hit2D.normal * Vector2.Dot(_wantedPosition, hit2D.normal);
             CheckForCollisions();
