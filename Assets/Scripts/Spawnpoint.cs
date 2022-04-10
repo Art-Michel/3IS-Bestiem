@@ -19,7 +19,7 @@ public class Spawnpoint : MonoBehaviour
     {
         if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[0])
         {
-            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            randomTest = Random.Range(0, enemiesToSpawn.Count);
             if(randomTest < enemiesToSpawn.Count - 1)
             {
                 objToSpawn = enemiesToSpawn[randomTest];
@@ -31,7 +31,7 @@ public class Spawnpoint : MonoBehaviour
         }
         else if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[1])
         {
-            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            randomTest = Random.Range(0, enemiesToSpawn.Count);
             if(randomTest < enemiesToSpawn.Count - 1)
             {
                 objToSpawn = enemiesToSpawn[randomTest];
@@ -43,7 +43,7 @@ public class Spawnpoint : MonoBehaviour
         }
         else if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[2])
         {
-            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            randomTest = Random.Range(0, enemiesToSpawn.Count);
             if(randomTest < enemiesToSpawn.Count - 1)
             {
                 objToSpawn = enemiesToSpawn[randomTest];
@@ -55,7 +55,7 @@ public class Spawnpoint : MonoBehaviour
         }
         else if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[3])
         {
-            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            randomTest = Random.Range(0, enemiesToSpawn.Count);
             if(randomTest < enemiesToSpawn.Count - 1)
             {
                 objToSpawn = enemiesToSpawn[randomTest];

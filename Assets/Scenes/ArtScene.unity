@@ -7223,7 +7223,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0}
+  m_BackGroundColor: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -10809,7 +10809,7 @@ Transform:
   m_Children:
   - {fileID: 430539222}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &685143978
 MonoBehaviour:
@@ -40898,7 +40898,7 @@ PrefabInstance:
       objectReference: {fileID: 1839649107}
     - target: {fileID: 7889042439356253623, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7889042439356253623, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
       propertyPath: m_LocalPosition.x
