@@ -139,5 +139,10 @@ public class Spawnpoint : MonoBehaviour
     {
         Instantiate(enemiesToSpawn[11], transform.position, Quaternion.identity);
     }
+    [Button]
+    public void Spawn12()
+    {
+        Instantiate(enemiesToSpawn[12], transform.position, Quaternion.identity);
+    }
 
 }
