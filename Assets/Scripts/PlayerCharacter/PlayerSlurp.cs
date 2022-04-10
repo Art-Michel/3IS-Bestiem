@@ -17,9 +17,9 @@ public class PlayerSlurp : MonoBehaviour
 
     public Vector3 _faceTargetDistance;
     bool _isShootingTongue;
-    Vector3 _tongueTarget;
+    [SerializeField]Vector3 _tongueTarget;
     bool _isRetractingTongue;
-    float _tongueT;
+    [SerializeField]float _tongueT;
     [SerializeField] float _tongueShootingTime;
     PlayerInputs _playerInputs;
 
@@ -98,8 +98,11 @@ public class PlayerSlurp : MonoBehaviour
 
     void EndSlurp()
     {
-        if (_tongueHitbox.enemyTransform)
-            _tongueHitbox.enemyTransform.GetComponent<Ennemis>().Death();
+        if (_tongueHitbox.enemyTransforms.Count > 0)
+            foreach(Transform enemyTransform in _tongueHitbox.enemyTransforms)
+                enemyTransform.GetComponent<Ennemis>().Death();
+
+        _tongueHitbox.enemyTransforms.Clear();
         _isRetractingTongue = false;
         ResetTongueTip();
         _tongue.SetActive(false);
