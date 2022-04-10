@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TongueHitbox : MonoBehaviour
 {
-    public Transform enemyTransform;
+    public List<Transform> enemyTransforms;
     [SerializeField]Transform _mouthPosition;
 
     PlayerSlurp _playerSlurp;
@@ -19,7 +19,8 @@ public class TongueHitbox : MonoBehaviour
         if (other.transform.CompareTag("Ennemy"))
         {
             other.transform.parent = transform;
-            enemyTransform = other.transform;
+            enemyTransforms.Add(other.transform);
+            other.transform.GetComponent<BoxCollider2D>().enabled = false;
         }
         if (other.transform.CompareTag("Wall"))
         {

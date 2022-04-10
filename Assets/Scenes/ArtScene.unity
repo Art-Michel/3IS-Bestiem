@@ -7031,11 +7031,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1209215449055190517, guid: 7a9b1536dc9aeba4ea8e470dfb03532c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.677804
+      value: 3.49
       objectReference: {fileID: 0}
     - target: {fileID: 1209215449055190517, guid: 7a9b1536dc9aeba4ea8e470dfb03532c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3298867
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 1209215449055190517, guid: 7a9b1536dc9aeba4ea8e470dfb03532c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26946,11 +26946,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!4 &1259877817 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2954768987502372734, guid: 7312abd05d374f945ab623406796669e, type: 3}
-  m_PrefabInstance: {fileID: 6538904635639653269}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1271217891
 GameObject:
   m_ObjectHideFlags: 0
@@ -40958,10 +40953,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 718134745860283, guid: 7312abd05d374f945ab623406796669e, type: 3}
-      propertyPath: _mouthPosition
-      value: 
-      objectReference: {fileID: 1259877817}
     - target: {fileID: 6538904636973525618, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_Name
       value: Froggy
@@ -41009,14 +41000,6 @@ PrefabInstance:
     - target: {fileID: 6538904636973525628, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6683721668620033606, guid: 7312abd05d374f945ab623406796669e, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6683721668620033606, guid: 7312abd05d374f945ab623406796669e, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -2062397009
       objectReference: {fileID: 0}
     - target: {fileID: 8634700375784033973, guid: 7312abd05d374f945ab623406796669e, type: 3}
       propertyPath: _cursor
