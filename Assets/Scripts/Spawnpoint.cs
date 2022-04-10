@@ -55,6 +55,18 @@ public class Spawnpoint : MonoBehaviour
                 objToSpawn = enemiesToSpawn[2];
             }
         }
+        else if(TilesManager.Instance.currentTileSet == TilesManager.Instance.tileSets[3])
+        {
+            randomTest = Random.Range(0, enemiesToSpawn.Count * 3);
+            if(randomTest < enemiesToSpawn.Count - 1)
+            {
+                objToSpawn = enemiesToSpawn[randomTest];
+            }
+            else 
+            {
+                objToSpawn = enemiesToSpawn[3];
+            }
+        }
 
         if(!isSpawning)
         {
