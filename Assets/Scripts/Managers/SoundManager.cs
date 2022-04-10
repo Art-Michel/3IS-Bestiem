@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : LocalManager<SoundManager>
 {
     [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip tongueShoot;
+    [SerializeField] AudioClip slurp;
     [SerializeField] AudioClip jumpSound;
     [SerializeField] AudioClip moucheDeathSound;
     [SerializeField] AudioClip powerGet;
@@ -17,14 +17,14 @@ public class SoundManager : LocalManager<SoundManager>
         audioSource.PlayOneShot(clip, volume);
     }
 
-    public void TongueShootSound()
+    public void SlurpSound()
     {
-        PlaySound(tongueShoot, 1f);
+        PlaySound(slurp, 1f);
     }
 
     public void JumpSound()
     {
-        PlaySound(jumpSound, 1f);
+        PlaySound(jumpSound, 0.25f);
     }
 
     public void MoucheDeathSound()

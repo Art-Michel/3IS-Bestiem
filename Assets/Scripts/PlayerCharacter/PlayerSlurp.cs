@@ -58,6 +58,8 @@ public class PlayerSlurp : MonoBehaviour
             _tongue.SetActive(true);
             _tongueTarget = _cursor.position;
 
+            SoundManager.Instance.SlurpSound();
+
             ResetTongueTip();
             _faceTargetDistance = _tongueTarget - _tongue.transform.position;
             _tongue.transform.up = _faceTargetDistance.normalized;
@@ -99,6 +101,7 @@ public class PlayerSlurp : MonoBehaviour
         if (_tongueHitbox.enemyTransform)
             _tongueHitbox.enemyTransform.GetComponent<Ennemis>().Death();
         _isRetractingTongue = false;
+        ResetTongueTip();
         _tongue.SetActive(false);
     }
 

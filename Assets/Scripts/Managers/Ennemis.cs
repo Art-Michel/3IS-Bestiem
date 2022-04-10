@@ -9,7 +9,7 @@ public class Ennemis : MonoBehaviour
     [Button]
     public virtual void Death()
     {
-        Debug.Log("*dies from mid*");
+        SoundManager.Instance.MoucheDeathSound();
         UIManager.Instance.score += 100;
         UIManager.Instance.UpdateScore();
         Destroy(gameObject);
