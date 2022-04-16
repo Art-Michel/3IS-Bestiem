@@ -24,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268922025}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0141, y: 1.0141, z: 1.0141}
   m_Children: []
-  m_Father: {fileID: 6538904636973525628}
-  m_RootOrder: 3
+  m_Father: {fileID: 6023705940499369364}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1268922028
 MonoBehaviour:
@@ -418,7 +418,6 @@ Transform:
   - {fileID: 6023705940499369364}
   - {fileID: 7579888426348786679}
   - {fileID: 2064156536300205299}
-  - {fileID: 1268922026}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -532,6 +531,26 @@ MonoBehaviour:
   - {fileID: -8723588712413798994, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
   - {fileID: -5323098377977645717, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
   - {fileID: 1689512354366455494, guid: 341fd3f5d6d74f846adf14e943a14a3f, type: 3}
+  KermitSprites:
+  - {fileID: -6662605738476230728, guid: e5e485042da530d4a905f5790106798f, type: 3}
+  - {fileID: -1531252072153436642, guid: e5e485042da530d4a905f5790106798f, type: 3}
+  - {fileID: 5423722202254548507, guid: e5e485042da530d4a905f5790106798f, type: 3}
+  - {fileID: 3883326831871200440, guid: e5e485042da530d4a905f5790106798f, type: 3}
+  AbeilleSprites:
+  - {fileID: 5423089269187887587, guid: d6156b3229d8aaa48b9878484904405a, type: 3}
+  - {fileID: -7259454818274730837, guid: d6156b3229d8aaa48b9878484904405a, type: 3}
+  - {fileID: -1034891442088418203, guid: d6156b3229d8aaa48b9878484904405a, type: 3}
+  - {fileID: 8149093208992178776, guid: d6156b3229d8aaa48b9878484904405a, type: 3}
+  RamboSprites:
+  - {fileID: -8882173086579048123, guid: d8e75460147e67346817490c0d1c95ba, type: 3}
+  - {fileID: 4729018920534300002, guid: d8e75460147e67346817490c0d1c95ba, type: 3}
+  - {fileID: -7706913139461999724, guid: d8e75460147e67346817490c0d1c95ba, type: 3}
+  - {fileID: 4691892160949130407, guid: d8e75460147e67346817490c0d1c95ba, type: 3}
+  TronSprites:
+  - {fileID: -3179315000856222835, guid: c09ea6c44229ed24dbacf210f33edcaf, type: 3}
+  - {fileID: 6363857903527587798, guid: c09ea6c44229ed24dbacf210f33edcaf, type: 3}
+  - {fileID: 3265522594242675854, guid: c09ea6c44229ed24dbacf210f33edcaf, type: 3}
+  - {fileID: 313122536935377500, guid: c09ea6c44229ed24dbacf210f33edcaf, type: 3}
 --- !u!1 &8684915192659690113
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +562,7 @@ GameObject:
   - component: {fileID: 6023705940499369364}
   - component: {fileID: 1207295523338199267}
   m_Layer: 0
-  m_Name: Sprite
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -561,6 +580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2954768987502372734}
+  - {fileID: 1268922026}
   m_Father: {fileID: 6538904636973525628}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

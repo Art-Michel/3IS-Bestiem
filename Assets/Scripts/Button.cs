@@ -7,6 +7,12 @@ public class Button : MonoBehaviour
 {
     [SerializeField] int nbscene;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     public void Play()
     {
         SceneManager.LoadScene(nbscene);

@@ -24,16 +24,4 @@ public class PlayerSpriteManager : LocalManager<PlayerSpriteManager>
     {
         SetCurrentSprites(RegularSprites);
     }
-
-    [Button]
-    void SetKero()
-    {
-        SetCurrentSprites(KeroSprites);
-    }
-
-    [Button]
-    void SetRegular()
-    {
-        SetCurrentSprites(RegularSprites);
-    }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Hurtbox : MonoBehaviour
+public class Hitbox : MonoBehaviour
 {
     void Update()
     {
