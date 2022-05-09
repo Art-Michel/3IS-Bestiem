@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -17113,7 +17113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -17931,7 +17931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -24775,7 +24775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -24834,7 +24834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -28544,7 +28544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -28603,7 +28603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}
@@ -31827,7 +31827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f36f207358a774da554a984512bac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningCD: 4.44
+  spawningCD: 7.98
   enemiesToSpawn:
   - {fileID: 7889042439356253625, guid: 55c84c6f66e7d0f4b8db8f3de81faf9a, type: 3}
   - {fileID: 1209215449055190521, guid: 103b0f3d984b7494fb34ed2c387558aa, type: 3}

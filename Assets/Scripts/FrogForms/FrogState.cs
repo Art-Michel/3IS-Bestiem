@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrogState : MonoBehaviour
+public class FrogState : State
 {
-    // Start is called before the first frame update
-    void Start()
+    public FrogState(): base(StateNames.FROG)
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
