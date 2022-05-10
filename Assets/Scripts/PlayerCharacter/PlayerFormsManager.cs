@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
-public class PlayerSpriteManager : LocalManager<PlayerSpriteManager>
+public class PlayerFormsManager : LocalManager<PlayerFormsManager>
 
 {
     public List<Sprite> RegularSprites;
@@ -20,8 +20,4 @@ public class PlayerSpriteManager : LocalManager<PlayerSpriteManager>
         CurrentSprites = spritesToUse;
     }
 
-    void Start()
-    {
-        SetCurrentSprites(RegularSprites);
-    }
 }

@@ -14,7 +14,7 @@ public class MoucheTron : Ennemis
     public override void Death()
     {
         //Laisse une trainée derrière Frog qui tue les mouches
-        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.TronSprites);
+        PlayerFormsManager.Instance.SetCurrentSprites(PlayerFormsManager.Instance.TronSprites);
         Instantiate(deathVFX, transform.position, Quaternion.identity);
         base.Death();
     }

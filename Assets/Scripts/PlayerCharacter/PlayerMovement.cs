@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     PlayerInputs _playerInputs;
-    PlayerSpriteManager _playerSpriteManager;
+    PlayerFormsManager _playerSpriteManager;
     SpriteRenderer _bodySpriteRenderer;
     [SerializeField] Transform _collisionCenter;
 
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         _bodySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        _playerSpriteManager = GetComponent<PlayerSpriteManager>();
+        _playerSpriteManager = GetComponent<PlayerFormsManager>();
 
     }
 

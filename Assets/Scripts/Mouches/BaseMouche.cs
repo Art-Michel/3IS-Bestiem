@@ -13,8 +13,6 @@ public class BaseMouche : Ennemis
     }
     public override void Death()
     {
-        //change to GB visual
-
         TilesManager.Instance.ChangeTileSet(baseTiles);
         base.Death();
     }

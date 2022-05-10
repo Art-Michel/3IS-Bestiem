@@ -14,7 +14,7 @@ public class MuppetMouche : Ennemis
     public override void Death()
     {
         //Transforme Frog en Kermit
-        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.KermitSprites);
+        PlayerFormsManager.Instance.SetCurrentSprites(PlayerFormsManager.Instance.KermitSprites);
         Instantiate(deathVFX, transform.position, Quaternion.identity);
         base.Death();
     }

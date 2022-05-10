@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class FrogState : State
 {
-    public FrogState(): base(StateNames.FROG)
+    public FrogState() : base(StateNames.FROG)
     {
 
+    }
+
+    public override void Begin()
+    {
+        PlayerFormsManager.Instance.SetCurrentSprites(PlayerFormsManager.Instance.RegularSprites);
     }
 }

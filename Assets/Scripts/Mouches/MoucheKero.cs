@@ -15,7 +15,7 @@ public class MoucheKero : Ennemis
     {
         //Transforme Frog en Kero
         Instantiate(deathVFX, transform.position, Quaternion.identity);
-        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.KeroSprites);
+        PlayerFormsManager.Instance.SetCurrentSprites(PlayerFormsManager.Instance.KeroSprites);
         base.Death();
     }
 }

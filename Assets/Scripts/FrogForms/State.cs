@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class State
 {
-    public FSM fsm = null;
+    public FrogFSM fsm = null;
 
     public string Name { get; private set; }
 

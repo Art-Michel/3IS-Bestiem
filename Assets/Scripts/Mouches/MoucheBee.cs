@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class MoucheAbeille : Ennemis
+public class MoucheBee : Ennemis
 {
     private void Awake()
     {
@@ -12,7 +12,7 @@ public class MoucheAbeille : Ennemis
     public override void Death()
     {
         //Transforme Frog en abeille
-        PlayerSpriteManager.Instance.SetCurrentSprites(PlayerSpriteManager.Instance.AbeilleSprites);
+        PlayerFormsManager.Instance.SetCurrentSprites(PlayerFormsManager.Instance.AbeilleSprites);
         base.Death();
     }
 }
